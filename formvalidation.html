@@ -6,16 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="index.html"><!--form validation through REQUIRED-->
+    <form action="index.html" method="POST"><!--form validation through REQUIRED-->
         <label for="username" >Username</label>
-        <input type="text" name="name" placeholder="enter your name" required=""><br>
+
+        <input type="text" name="name" autofocus="on" autocomplete="off" placeholder="enter your name" required=""><br>
         <br>
         <label for="password">Password</label>
-        <input type="password" name="password" placeholder="enter you password" required="">
+        <input type="password" autocomplete="off"  placeholder="enter you password" required="">
         <br><br>
         <label for="email">Email</label>
         <input type="email" name="email" placeholder="enter your email" required="">
         <br><br>
+        <!--readonly-->
+        <label for="number">fixed price</label>
+        <input type="number" autocomplete="off" readonly="" value="100" placeholder="" required=""><br><br>
         <input type="submit" value="login">
     
     </form>
